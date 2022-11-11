@@ -122,12 +122,12 @@ make_plot <- function(pred_dat, sample_dat, points, truth, lin, cat, spl, trans_
                                      "Spline" = 2)) +
     scale_size_manual(name = "",
                       values = c("Truth" = 1,
-                                 "Linear" = 1,
-                                 "Categorical" = 1,
-                                 "Spline" = 1)) +
+                                 "Linear" = 1.25,
+                                 "Categorical" = 1.25,
+                                 "Spline" = 1.25)) +
     theme(legend.position = "bottom",
           legend.text = element_text(size = 25),
-          legend.key.size = unit(1.4, 'cm'))
+          legend.key.size = unit(1.6, 'cm'))
   
   if ("pred_lin" %in% colnames(pred_dat) & lin) {
     res_plot <- res_plot +
