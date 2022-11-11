@@ -56,10 +56,11 @@ get_knots <- function(x, n_knots, knots, xrange, max_knots) {
   if (knots != "") {
     numvector <- numvectorize(knots)
     if (!is.null(numvector)) {
-      if (length(numvector) > max_knots) {
+      num_knots <- sort(unique(pmax(pmin(numvector, xrange[2]), xrange[1])))
+      if (length(num_knots) > max_knots | length(num_knots) < 3) {
         return(NULL)
       }
-      return(sort(unique(pmax(pmin(numvector, xrange[2]), xrange[1]))))
+      return(num_knots)
     }
     else {
       return(NULL)
