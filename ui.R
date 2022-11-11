@@ -9,7 +9,7 @@ ui <- fluidPage(
                 align = "center")),
   
   fluidRow(
-    column(2,
+    column(3,
            h3("Parameters"),
            fluidRow(
              column(12,
@@ -140,7 +140,7 @@ ui <- fluidPage(
              )
            )
     ),
-    column(8,
+    column(9,
            plotOutput(outputId = "main_plot", height = "700px"),
            span(textOutput(outputId = "spl_warning"), style = "color:red"),
            span(textOutput(outputId = "cat_warning"), style = "color:red"),
