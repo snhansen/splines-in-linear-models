@@ -5,7 +5,7 @@ library(shinyFeedback)
 ui <- fluidPage(
   title = "Splines in linear regression models",
   useShinyFeedback(),
-  titlePanel(h1("Use of splines in linear regression models",
+  titlePanel(h1("Splines in linear regression models",
                 align = "center")),
   
   fluidRow(
