@@ -6,10 +6,11 @@ library(Hmisc)
 library(stringr)
 library(RColorBrewer)
 library(glue)
+options(scipen = 999)
 
 # Set your working directory to load the utils.R file.
 # setwd("..")
-source("R\\utils.R")
+source("R/utils.R")
 
 server <- function(input, output) {
   max_obs <- 100000
