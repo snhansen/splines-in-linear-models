@@ -78,7 +78,7 @@ ui <- fluidPage(
                                                   hr(),
                                                   h4("Restricted cubic spline fit"),
                                                   numericInput("n_knots",
-                                                               label = "Number of knots (spline):",
+                                                               label = "Number of knots:",
                                                                value = 3,
                                                                step = 1,
                                                                min = 3,
