@@ -84,7 +84,6 @@ parse_fct <- function(s, xrange) {
     return(eval(parse(text = s)))
   }
   err <- try(fct(xrange), TRUE)
-  print(err)
   if (class(err) == "try-error") {
     return(list("is_valid" = FALSE, "msg" = "Error: Invalid functional expression"))
   }
